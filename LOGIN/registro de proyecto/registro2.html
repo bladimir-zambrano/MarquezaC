@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!--Barra de menu-->
+    <header class="barra_de_menu">
+        <!-- titulo de menu de inicio -->
+        <h1 class="titulo_menu">Marqueza C</h1>
+
+        <!-- botón del menú desplegable -->
+        <button class="btn_menu" aria-label="abrir_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- lista de navegacion del menu -->
+        <nav class="lista_de_navegacion_menu">
+            <ul class="lista_menu">
+                <li><a href="#" class="lista_contenido">Cotizaciones</a></li>
+                <li><a href="#" class="lista_contenido">Pedidos</a></li>
+                <li><a href="#" class="lista_contenido">Insumos</a></li>
+                <li><a href="#" class="lista_contenido">Productos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Formulario de Registro -->
+    <form class="formulario_Registro" id="formulario">
+        <!-- titulo de registro -->
+        <h2 class="titulo_formulario">Registro</h2>
+        <!-- cajas de texto de registro -->
+        <input type="text" placeholder="Ingrese usuario" id="usuario" class="cajas_formulario" pattern="[A-Za-záéíóúñ ]+" title="Solo se permiten letras" required>
+        <input type="password" placeholder="Ingrese contraseña" id="password" class="cajas_formulario">
+        <input type="password" placeholder="Ingrese contraseña nuevamente" id="password2" class="cajas_formulario">
+        <!-- boton de registrar -->
+        <button type="submit" class="btn_Registar">Registrar</button>
+        <!-- enlace de registro -->
+        <a href="D:\proyecto\LOGIN\inicio de sesion\inicio.html" class="enlace_formulario">Ya estoy Registrado</a>
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

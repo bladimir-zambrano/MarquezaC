@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+
+/* Estilos generales */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(fondo.jpg) no-repeat;
+  margin: 0;
+  background-position: center;
+}
+
+/* estilo de la barra del menu del inicio de sesion */
+.barra_de_menu_inicio_de_sesion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background: hsl(288, 70%, 20%, 50%);
+  color: white;
+  z-index: 99;
+}
+
+/* estilo del titulo del menu de inicio */
+.titulo_menu {
+  font-family: "Playwrite IE", cursive;
+  margin-left: 20px;
+}
+
+/* estilo de lista de menu de inicio */
+.lista_de_menu_de_inicio {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.lista_menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* estilos enlaces de la barra de navegacion del menu */
+.lista_contenido {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn_menu {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.btn_menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+
+/* estilo del formulario de inicio de sesion */
+.formulario_inicio_de_sesion {
+  background: hwb(290 11% 59% / 0.2%);
+  width: 350px;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
+}
+
+/* estilo del titulo del formulario */
+.titulo_formulario {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color: black;
+}
+
+/* estilo de las cajas de texto del formulario */
+.caja_formulario {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.caja_formulario:focus {
+  outline: 1px solid #270663;
+}
+
+/* estilo del contenedor de checkbox y link del formulario */
+.enlace_btn_formulario {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* estilo del link de recuperación de contraseña */
+
+.enlace_recuperacion_contraseña {
+  text-decoration: none;
+  color: #7c3aed;
+}
+
+.enlace_recuperacion_contraseña:hover {
+  text-decoration: underline;
+}
+
+
+/* estilo del botónes de inicio de sesión */
+.boton_inicio_de_sesion {
+  background: #c084fc;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton_inicio_de_sesion:hover {
+  background: #a855f7;
+}
+
+/* estilo del botón de registro */
+.boton_registro {
+  background: #f9a8d4;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton_registro:hover {
+  background: #ec4899;
+}
+.boton_registro a {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media (max-width: 375px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .barra_de_menu_inicio_de_sesion {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .titulo_menu {
+    padding: 30px;
+  }
+
+  .btn_menu {
+    display: flex;
+  }
+
+  .lista_de_menu_de_inicio {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: hsl(288, 70%, 20%);
+    display: none;
+  }
+
+  .lista_de_menu_de_inicio.active {
+    display: flex;
+  }
+  .lista_menu {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .lista_menu li {
+    border-top: 1px solid #444;
+  }
+
+  .lista_contenido {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .barra_de_menu_inicio_de_sesion {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .titulo_menu {
+    padding: 30px;
+  }
+
+  .btn_menu {
+    display: flex;
+  }
+
+  .lista_de_menu_de_inicio {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: hsl(288, 70%, 20%);
+    display: none;
+  }
+
+  .lista_de_menu_de_inicio.active {
+    display: flex;
+  }
+  .lista_menu {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .lista_menu li {
+    border-top: 1px solid #444;
+  }
+
+  .lista_contenido {
+    display: block;
+    padding: 1rem;
+  }
+}

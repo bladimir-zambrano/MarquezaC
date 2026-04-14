@@ -1,0 +1,214 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+
+ /* Estilos generales */
+ * {
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: url(fondo.jpg) no-repeat;
+     margin: 0;
+     background-position: center;
+ }
+
+ /* estilos para la barra del menu */
+ .barra_de_menu {
+     display: flex;
+     align-items: center;
+     text-align: center;
+     justify-content: space-between;
+     background: hsl(288, 70%, 20%, 50%);
+     color: white;
+     padding: 15px;
+     z-index: 99;
+ }
+
+ /* estilos para el título del menú */
+ .titulo_menu {
+     font-family: "Playwrite IE", cursive;
+     margin-left: 20px;
+ }
+
+ /* estilos para la lista de navegación del menú */
+ .lista_de_navegacion_menu {
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+
+ .lista_menu {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .lista_contenido {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ .btn_menu {
+     display: none;
+     flex-direction: column;
+     gap: 4px;
+     background: none;
+     border: none;
+     cursor: pointer;
+     padding: 4px;
+ }
+
+ .btn_menu span {
+     display: block;
+     width: 25px;
+     height: 3px;
+     background-color: white;
+ }
+
+ /* estilos para el formulario de registro */
+ .formulario_Registro {
+     background: hwb(290 11% 59% / 0.2%);
+     width: 350px;
+     height: 350px, auto;
+     margin: 40px auto;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
+ }
+
+ .titulo_formulario {
+     text-align: center;
+     align-items: center;
+     padding: 20px;
+ }
+
+ /* estilos para las cajas de texto del formulario */
+ .cajas_formulario {
+     width: 95%;
+     padding: 10px;
+     margin: 8px 0;
+     border-radius: 20px;
+     border: 1px solid #ccc;
+ }
+
+ .cajas_formulario:focus {
+     outline: 1px solid #270663;
+ }
+
+ /* estilos para el botón de registro */
+ .btn_Registar {
+     width: 100%;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     padding: 10px;
+     background: hsl(268, 70%, 17%, 70%);
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .btn_Registar:hover {
+     background: #270663;
+ }
+
+ /* estilos para el enlace de registro */
+ .enlace_formulario {
+     display: block;
+     text-align: center;
+     margin-top: 10px;
+ }
+
+
+ @media (max-width: 375px) {
+     body {
+         display: grid;
+         grid-template-columns: 1fr;
+     }
+
+     .barra_de_menu {
+         position: relative;
+     }
+
+     .titulo_menu {
+         padding: 30px;
+     }
+
+     .btn_menu {
+         display: flex;
+     }
+
+     .lista_menu {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         flex-direction: column;
+         gap: 0;
+         background-color: hsl(288, 70%, 20%);
+         display: none;
+     }
+
+     .lista_menu.active {
+         display: flex;
+     }
+
+     .lista_menu li {
+         border-top: 1px solid #444;
+     }
+
+     .lista_contenido {
+         display: block;
+         padding: 1rem;
+     }
+ }
+
+ @media (max-width: 768px) {
+     body {
+         display: grid;
+         grid-template-columns: 1fr;
+     }
+
+     .titulo_menu {
+         padding: 30px;
+     }
+
+     .barra_de_menu {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+     }
+
+     .btn_menu {
+         display: flex;
+     }
+
+     .lista_menu {
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         flex-direction: column;
+         gap: 0;
+         background-color: hsl(288, 70%, 20%);
+         display: none;
+
+     }
+
+     .lista_menu.active {
+         display: flex;
+     }
+
+     .lista_menu li {
+         border-top: 1px solid #444;
+     }
+
+     .lista_contenido {
+         display: block;
+         padding: 1rem;
+     }
+ }

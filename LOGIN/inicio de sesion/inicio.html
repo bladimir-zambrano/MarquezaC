@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicio De Sesion</title>
+	<link rel="stylesheet" type="text/css" href="style_inicio.css">
+</head>
+
+<body>
+	<!-- barra de menu de inicio-->
+	<header class="barra_de_menu_inicio_de_sesion">
+		<h1 class="titulo_menu">Marqueza C</h1>
+
+		<!-- botón del menú desplegable -->
+		<button class="btn_menu" aria-label="abrir_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+		<!-- barra de navegacion -->
+		<nav class="lista_de_menu_de_inicio">
+			<ul class="lista_menu">
+				<li><a href="#" class="lista_contenido">Cotizaciones</a></li>
+				<li><a href="#" class="lista_contenido">Pedidos</a></li>
+				<li><a href="#" class="lista_contenido">Insumos</a></li>
+				<li><a href="#" class="lista_contenido">Productos</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- formulario con label -->
+	<form class="formulario_inicio_de_sesion" id="formulario_inicio_de_sesion">
+		<!-- titulo del formulario -->
+		<h2 class="titulo_formulario">Inicio de Sesion</h2>
+		<!-- cajas de texto del fomulario -->
+		<input type="text" placeholder="Ingrese Usuario" class="caja_formulario" id="usuario_inicio_de_sesion" pattern="[A-Za-záéíóúñ ]+" title="Solo se permiten letras" required>
+		<input type="password" placeholder="Ingrese Contraseña" class="caja_formulario" id="contraseña_inicio_de_sesion">
+		<!-- contenedor de checkbox y link del formulario -->
+		<div class="enlace_btn_formulario">
+			<div><input type="checkbox" name="recordar"> Recordar</div>
+			
+			<a href="#" class="enlace_recuperacion_contraseña">Olvide Mi Contraseña</a>
+		</div>
+		<!-- botones del formulario -->
+		<button type="submit" class="boton_inicio_de_sesion">Ingresar</button>
+		<button type="button" class="boton_registro"><a href="D:\proyecto\LOGIN\registro de proyecto\registro2.html">Registrarse</a></button>
+
+
+	</form>
+	<script src="menu.js"></script>
+</body>
+
+</html>
