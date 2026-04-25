@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insumos</title>
+    <link rel="stylesheet" type="text/css" href="insumo.css">
+</head>
+<body>
+    <!--barra de menu-->
+    <header class="barra_de_menu">  
+        <!---->
+        <button class="btn_menu" aria-label="abrir_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- lista de navegacion del menu -->
+        <nav class="lista_de_navegacion_menu">
+            <ul class="lista_menu">
+                <li><a href="#" class="lista_contenido">Cotizaciones</a></li>
+                <li><a href="#" class="lista_contenido">Pedidos</a></li>
+                <li><a href="#" class="lista_contenido">Insumos</a></li>
+                <li><a href="#" class="lista_contenido">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--formulario-->
+    <div class="contenedor_formulario_registro ">
+        <form class="formulario_insumo" id="formu_insumo">
+            <h2 class="nombre_formulario"> filtrar</h2>
+            <input type="text" class="caja_formulario" id="ingresar_insumo" placeholder="ingrese nombre del insumo">
+            <input type="text" class="caja_formulario" id="id_insumo" placeholder="ingrese ID del insumo">
+            <button type="submit" class="btn_buscar_insumo">buscar</button>
+        </form>
+
+        <!--inicio de registro-->
+            <div class="contenedor_de_registro">
+                <h2 class="titulo">registrar</h2>
+                <button class="btn_registrar_pedido" aria-label="abrir_menu" id="registrar_pedido">registrar
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="listado_registro">
+                    <il class="lista_registro"> <h3>registro </h3></il>
+                    <il class="lista_registro"> <input type="text" class="caja_registro" placeholder="ingrese nombre del producto"></il>
+                    <il class="lista_registro"> <input type="text" class= "caja_registro" placeholder="ingrese categoria"></il>
+                    <il class="lista_registro"> <input type="text" class="caja_registro" placeholder="descripcion"></il>
+                    <il class="lista_registro"> <h3>detalles del producto</h3></il>
+                    <il class="lista_registro"> <input type="text" class="caja_registro" placeholder="nombre de la marca"></il>
+                    <il class="lista_registro"> <input type="text" class="caja_registro" placeholder="nombre de la presentacion"></il>
+                    <il class="lista_registro"> <input type="number" class="caja_registro" placeholder="cantidad"></il>
+                    <il class="lista_registro"> <input type="number" class="caja_registro" placeholder="stock minimo"></il>
+                    <il class="lista_registro"> <input type="number" class="caja_registro" placeholder="precio unitario"></il>
+                    <il class="lista_registro"> <input type="number" class="caja_registro" placeholder="stock minimo"></il>
+                    <il class="lista_registro"> <input type="number" class="caja_registro" placeholder="precio total"></il>
+                    <il class="lista_registro"> <input type="text" class="caja_registro" placeholder="descripcion"></il>
+                    <il class="lista_registro"> <button class="btn_resitro" id="btn_registro">guardar</button></il>
+                </ul>
+            </div>
+    </div>
+
+    <!--ñ-->
+    <table class="tabla_insumo" id="tabla_insumo">
+        <tr>
+            <th>id </th>
+            <th>nombre</th>
+            <th>categoria</th>
+            <th>precio</th>
+            <th>marca</th>
+            <th>cantidad</th>
+            <th>presentacon</th>
+            <th>modificar</th>
+            <th>eliminar</th>
+        </tr>
+    </table>
+    <script type="text/javascript" src="insumos.js"></script>
+</body>
+</html>
